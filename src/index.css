@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .5s;
+  font-family: 'vazir', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+/* ::-webkit-scrollbar {
+  background-color: #e7e7e7;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #868686;
+} */
+
+:root {
+  --theme-color: #71C21B;
+  --grey: #555;
+  --light-grey: #888;
+  --very-light-grey: #dadada;
+  --white-grey: #f9f9f9;
+  --black: #222;
+  --white: #fff;
+  --very-light-green: #DCF0C7;
+}

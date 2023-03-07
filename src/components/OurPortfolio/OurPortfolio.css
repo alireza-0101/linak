@@ -1,0 +1,92 @@
+.portfolio-box {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    user-select: none;
+    margin-top: 70px;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.section-title>p {
+    max-width: 570px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--light-grey);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.photos-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+.photos-wrapper>div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.photos-wrapper>div>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photos-wrapper>img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.photos-wrapper>div::after {
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--theme-color);
+    opacity: 70%;
+    transition: 1s;
+}
+
+.photos-wrapper>div:hover::after {
+    height: 100%;
+}
+
+.photos-wrapper>div i {
+    position: absolute;
+    color: white;
+    font-size: 55px;
+    z-index: 5;
+    opacity: 0;
+    transition: 2s;
+}
+
+.photos-wrapper>div:hover i {
+    opacity: 100%;
+}

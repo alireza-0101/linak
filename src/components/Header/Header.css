@@ -1,0 +1,46 @@
+.header {
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+    user-select: none;
+
+}
+
+.header.scroll {
+    position: fixed;
+    top: 0;
+    background-color: #fffffff5;
+    box-shadow: 10px 0 15px 1px #00000038;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header.scroll li, .header.scroll a {
+    color: black;
+}
+
+.header.scroll .active a{
+    color: var(--theme-color);
+}
+
+.header-logo {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.header-logo span {
+    color: var(--theme-color);
+}
+
+.header.scroll .navbar-ul.show {
+    background-color: #fffffff5;
+}
